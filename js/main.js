@@ -8,7 +8,12 @@ const myContainer = document.querySelector(".container");
 for (let i = 1; i <= 100; i++) {
     
     let newElem = box();
-
+    newElem.addEventListener("click",
+        function(){
+            newElem.classList.toggle("clicked");
+        }
+    );
+    
     myContainer.appendChild(newElem);
 
     newElem.append(i);

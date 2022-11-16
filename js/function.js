@@ -1,11 +1,3 @@
-let play = document.querySelector("#play");
-play.addEventListener("click",
-    function(event) {
-        event.preventDefault;
-
-    }
-)
-
 // funzione crea elementi square
 function box() {
 
