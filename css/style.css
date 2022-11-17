@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 
@@ -20,7 +21,7 @@ header{
     padding: 0 50px;
 }
 
-h1{
+header h1{
     font-size: 50px;
     color: rgb(255, 0, 0);
 }
@@ -50,27 +51,32 @@ button:hover{
 
 /* main */
 .container{
-    max-width: 1200px;
-    margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
-}
-
-.block{
-    display: block;
-    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+    padding: 50px 200px;
 }
 
 .square{
     height: 100px;
-    width: 100px;
-    margin: 10px;
-    font-size: 20px;
+    margin: 5px;
     background-color: red;
     border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.square.easy{
+    width: calc(10% - 10px);
+}
+.square.medium{
+    width: calc(11% - 10px);
+}
+.square.hard{
+    width: calc(13% - 10px);
 }
 
 .square.clicked{
@@ -83,7 +89,9 @@ button:hover{
 footer{
     height: 80px;
     padding: 0 50px;
-    border: 1px solid black;
     display: flex;
     align-items: center;
+    /* debug */
+    border: 1px solid black;
+
 }
